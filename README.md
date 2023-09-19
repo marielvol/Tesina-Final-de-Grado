@@ -21,3 +21,27 @@ En este trabajo se llevó a cabo la implementación de un prototipo inicial de u
 - *python_scripts*: acá se encuentra el código escrito en Python que realiza el **proceso de detección**: obtiene la imagen de entrada, carga el modelo de la red neuronal, realiza la detección y guarda la imagen resultante. 
 - *index.php*: este es el código correspondiente a la **página de inicio** de la aplicación. Contiene un botón para seleccionar la imagen y otro para procesarla.
 - *upload.php*: este código corresponde a la **página de resultado**, que muestra la imagen obtenida al realizar la detección.
+
+## Utilización del código
+
+### Preprocesamiento de las imágenes y entrenamiento de la red
+
+Para utilizar los scripts se debe clonar el repositorio e instalar los requerimientos incluidos en el archivo "requirements.txt" en un entorno con Python>=3.11.
+
+#### Clonar el repositorio:
+
+    git clone https://github.com/marielvol/Tesina-Final-de-Grado.git
+
+#### Instalar los requerimientos:
+
+    pip install -r requirements.txt
+
+#### Ejecutar los scripts:
+
+    python "nombre_script".py
+
+###  Herramienta de visualización
+
+Para la herramienta de visualización se debe montar un servidor web como Apache. Para ello, se puede descargar [XAMPP](https://www.apachefriends.org/es/download.html). Una vez descargado, se debe mover la carpeta de la app al directorio *htdocs* que se ubica dentro de *xampp*.
+
+Para ingresar a la página de inicio se debe escribir la siguiente url en cualquier navegador web: http://localhost/cancer_detection_app/index.php
